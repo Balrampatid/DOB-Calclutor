@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calcluate</title>
+    <style>
+        body{
+                border: 4px groove black;
+                border-radius: 15px;
+                width: 460px;
+                height: 310px;
+                margin-left: 550px;
+                margin-top: 200px;
+                
+        }
+        .container{
+            padding-left: 40px;
+            font-size: 30px;
+            
+        }
+        #calculateBtn{
+            font-size: 20px;
+            width: 200px;
+
+        }
+        .ate{
+            width: 150px;
+            height: 30px;
+            margin-left: 10px;
+            font-size: 20PX;
+        }
+        .btn{
+            margin-left: 90px;
+            margin-top: 20px;
+            height: 45px;
+
+        }
+        #p{
+            margin-left: 90px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p id="p">Age Calculator</p>
+        <div class="date-container">
+            <label for="birthDate">Date of Birth</label>
+            <input class="ate"  type="date" name="birthDate" id="birthDate" required>
+        </div>
+        <div class="date-container">
+            <label for="currentDate">Age at the Date of</label>
+            <input class="ate" type="date" name="currentDate" id="currentDate" required>
+        </div>
+        <input class="btn" type="button" value="currentDate" id="calculateBtn">
+        <p id="output"></p>
+    </div>
+    <script src="age.js"></script>
+</body>
+</html>
